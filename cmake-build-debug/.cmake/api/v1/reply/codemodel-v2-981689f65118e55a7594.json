@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "untitled::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-untitled-Debug-f108bc15b86d6ab74f48.json",
+					"jsonFile" : "target-untitled-Debug-cb58b4f13c65ac4accc1.json",
 					"name" : "untitled",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/luna/Desktop/DA/projeto2/project2_DA/cmake-build-debug",
-		"source" : "/Users/luna/Desktop/DA/projeto2/project2_DA"
+		"build" : "/home/martagfmartins/Desktop/faculdade/da/project2_DA/cmake-build-debug",
+		"source" : "/home/martagfmartins/Desktop/faculdade/da/project2_DA"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 5
+		"minor" : 7
 	}
 }

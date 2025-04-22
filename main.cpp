@@ -3,10 +3,12 @@
 //
 
 #include <iostream>
+#include "src/Menu.h"
+#include "src/Parser.h"
 using namespace std;
 
 int main() {
-    cout << "hello";
+    Menu menu;
 
     return 0;
 }
