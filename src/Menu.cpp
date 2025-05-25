@@ -4,6 +4,8 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <fstream>
+#include <sstream>
 
 using namespace std;
 
@@ -17,6 +19,13 @@ Menu::Menu() {
              <<"#   2 -> Dataset 02            #" << "\n"
              <<"#   3 -> Dataset 03            #" << "\n"
              <<"#   4 -> Dataset 04            #" << "\n"
+             <<"#   5 -> Dataset 05            #" << "\n"
+             <<"#   6 -> Dataset 06            #" << "\n"
+             <<"#   7 -> Dataset 07            #" << "\n"
+             <<"#   8 -> Dataset 08            #" << "\n"
+             <<"#   9 -> Dataset 09            #" << "\n"
+             <<"#  10 -> Dataset 10            #" << "\n"
+             <<"#------------------------------#" << "\n"
              <<"#   E -> EXIT                  #" << "\n"
              <<"################################" << "\n"
              <<"Option: ";
@@ -27,6 +36,12 @@ Menu::Menu() {
         else if (inp == "2") loadData(2);
         else if (inp == "3") loadData(3);
         else if (inp == "4") loadData(4);
+        else if (inp == "5") loadData(5);
+        else if (inp == "6") loadData(6);
+        else if (inp == "7") loadData(7);
+        else if (inp == "8") loadData(8);
+        else if (inp == "9") loadData(9);
+        else if (inp == "10") loadData(10);
         else if (inp == "e" || inp == "E") exit(0);
         else {
             cout << "Insert a valid input!" << endl;
@@ -40,9 +55,21 @@ Menu::Menu() {
 
 void Menu::loadData(int option) {
     string id = option < 10 ? "0" + to_string(option) : to_string(option);
-    Dataset data = loadDataset(id);
-    truckCapacity = data.capacity;
-    pallets = data.pallets;
+
+    // Determine which path to use
+    string basePath = (option >= 5 && option <= 10)
+        ? "datasets-extra/"
+        : "datasets/";
+
+    string truckPath = basePath + "TruckAndPallets_" + id + ".csv";
+    string palletsPath = basePath + "Pallets_" + id + ".csv";
+
+    Dataset dataset;
+    dataset.capacity = parseTruckCapacity(truckPath);
+    dataset.pallets = parsePallets(palletsPath);
+
+    truckCapacity = dataset.capacity;
+    pallets = dataset.pallets;
 
     cout << "[INFO] Loaded dataset " << id << " with capacity " << truckCapacity 
          << " and " << pallets.size() << " pallets.\n";
@@ -86,6 +113,7 @@ void Menu::runExhaustive() {
     cout << "\n=== Exhaustive Search Result ===" << endl;
     cout << "Total profit: " << solution.totalProfit << endl;
     cout << "Total weight: " << solution.totalWeight << endl;
+    cout << "Execution time: " << solution.time << " ms" << endl;
     cout << "Selected pallets: ";
     for (const auto& p : solution.selectedPallets) {
         cout << p.id << " ";
@@ -99,6 +127,7 @@ void Menu::runDynamic() {
     cout << "\n=== Dynamic Programming Result ===" << endl;
     cout << "Total profit: " << solution.totalProfit << endl;
     cout << "Total weight: " << solution.totalWeight << endl;
+    cout << "Execution time: " << solution.time << " ms" << endl;
     cout << "Selected pallets: ";
     for (const auto& p : solution.selectedPallets) {
         cout << p.id << " ";
@@ -112,6 +141,7 @@ void Menu::runGreedy() {
     cout << "\n=== Greedy Approximation Result ===" << endl;
     cout << "Total profit: " << solution.totalProfit << endl;
     cout << "Total weight: " << solution.totalWeight << endl;
+    cout << "Execution time: " << solution.time << " ms" << endl;
     cout << "Selected pallets: ";
     for (const auto& p : solution.selectedPallets) {
         cout << p.id << " ";
@@ -120,7 +150,22 @@ void Menu::runGreedy() {
 }
 
 void Menu::runILP() {
-    cout << "[TODO] Executar ILP." << endl;
+    Solution solution = solveILP(truckCapacity, pallets);
+
+    if (solution.selectedPallets.empty()) {
+        std::cerr << "ILP solver failed or returned no pallets." << std::endl;
+        return;
+    }
+
+    std::cout << "\n=== ILP Solver Results ===" << std::endl;
+    std::cout << "Total profit: " << solution.totalProfit << std::endl;
+    std::cout << "Total weight: " << solution.totalWeight << " / " << truckCapacity << std::endl;
+    cout << "Execution time: " << solution.time << " ms" << endl;
+    std::cout << "Selected pallets: ";
+    for (const auto& pallet : solution.selectedPallets) {
+        std::cout << pallet.id << " ";
+    }
+    std::cout << "\n===========================\n";
 }
 
 string Menu::trim(const string &s) {

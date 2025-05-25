@@ -47,9 +47,18 @@ vector<Pallet> parsePallets(const std::string& path) {
     return pallets;
 }
 
-// função utilitária
 Dataset loadDataset(const string& id) {
-    string basePath = "/home/martagfmartins/Desktop/faculdade/da/project2_DA/datasets/";
+    int idNum = 0;
+    try {
+        idNum = stoi(id);
+    } catch (...) {
+        idNum = 0;
+    }
+
+    string basePath = (idNum >= 5 && idNum <= 10)
+        ? "datasets-extra/"
+        : "datasets/";
+
     string truckPath = basePath + "TruckAndPallets_" + id + ".csv";
     string palletsPath = basePath + "Pallets_" + id + ".csv";
 

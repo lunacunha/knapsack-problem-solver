@@ -213,6 +213,8 @@ CMakeFiles/untitled.dir/src/KnapsackSolver.cpp.o: /home/martagfmartins/Desktop/f
   /usr/include/c++/13/bits/basic_string.tcc \
   /usr/include/c++/13/bits/char_traits.h \
   /usr/include/c++/13/bits/charconv.h \
+  /usr/include/c++/13/bits/chrono.h \
+  /usr/include/c++/13/bits/codecvt.h \
   /usr/include/c++/13/bits/concept_check.h \
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
@@ -220,6 +222,7 @@ CMakeFiles/untitled.dir/src/KnapsackSolver.cpp.o: /home/martagfmartins/Desktop/f
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
+  /usr/include/c++/13/bits/fstream.tcc \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
@@ -238,6 +241,7 @@ CMakeFiles/untitled.dir/src/KnapsackSolver.cpp.o: /home/martagfmartins/Desktop/f
   /usr/include/c++/13/bits/new_allocator.h \
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
+  /usr/include/c++/13/bits/parse_numbers.h \
   /usr/include/c++/13/bits/postypes.h \
   /usr/include/c++/13/bits/predefined_ops.h \
   /usr/include/c++/13/bits/ptr_traits.h \
@@ -245,6 +249,7 @@ CMakeFiles/untitled.dir/src/KnapsackSolver.cpp.o: /home/martagfmartins/Desktop/f
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
   /usr/include/c++/13/bits/specfun.h \
+  /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
@@ -270,11 +275,14 @@ CMakeFiles/untitled.dir/src/KnapsackSolver.cpp.o: /home/martagfmartins/Desktop/f
   /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
+  /usr/include/c++/13/chrono \
   /usr/include/c++/13/clocale \
   /usr/include/c++/13/cmath \
   /usr/include/c++/13/cstddef \
+  /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
   /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
@@ -285,6 +293,7 @@ CMakeFiles/untitled.dir/src/KnapsackSolver.cpp.o: /home/martagfmartins/Desktop/f
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/fstream \
   /usr/include/c++/13/initializer_list \
   /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
@@ -296,6 +305,8 @@ CMakeFiles/untitled.dir/src/KnapsackSolver.cpp.o: /home/martagfmartins/Desktop/f
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/ratio \
+  /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
@@ -328,6 +339,7 @@ CMakeFiles/untitled.dir/src/KnapsackSolver.cpp.o: /home/martagfmartins/Desktop/f
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/time.h \
@@ -361,6 +373,8 @@ CMakeFiles/untitled.dir/src/KnapsackSolver.cpp.o: /home/martagfmartins/Desktop/f
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
@@ -403,8 +417,10 @@ CMakeFiles/untitled.dir/src/KnapsackSolver.cpp.o: /home/martagfmartins/Desktop/f
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
@@ -420,7 +436,8 @@ CMakeFiles/untitled.dir/src/KnapsackSolver.cpp.o: /home/martagfmartins/Desktop/f
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 CMakeFiles/untitled.dir/src/Menu.cpp.o: /home/martagfmartins/Desktop/faculdade/da/project2_DA/src/Menu.cpp \
   /home/martagfmartins/Desktop/faculdade/da/project2_DA/src/KnapsackSolver.h \
@@ -441,6 +458,8 @@ CMakeFiles/untitled.dir/src/Menu.cpp.o: /home/martagfmartins/Desktop/faculdade/d
   /usr/include/c++/13/bits/basic_string.tcc \
   /usr/include/c++/13/bits/char_traits.h \
   /usr/include/c++/13/bits/charconv.h \
+  /usr/include/c++/13/bits/chrono.h \
+  /usr/include/c++/13/bits/codecvt.h \
   /usr/include/c++/13/bits/concept_check.h \
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
@@ -448,6 +467,7 @@ CMakeFiles/untitled.dir/src/Menu.cpp.o: /home/martagfmartins/Desktop/faculdade/d
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
+  /usr/include/c++/13/bits/fstream.tcc \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
@@ -466,12 +486,14 @@ CMakeFiles/untitled.dir/src/Menu.cpp.o: /home/martagfmartins/Desktop/faculdade/d
   /usr/include/c++/13/bits/new_allocator.h \
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
+  /usr/include/c++/13/bits/parse_numbers.h \
   /usr/include/c++/13/bits/postypes.h \
   /usr/include/c++/13/bits/predefined_ops.h \
   /usr/include/c++/13/bits/ptr_traits.h \
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
@@ -497,10 +519,13 @@ CMakeFiles/untitled.dir/src/Menu.cpp.o: /home/martagfmartins/Desktop/faculdade/d
   /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
+  /usr/include/c++/13/chrono \
   /usr/include/c++/13/clocale \
   /usr/include/c++/13/cstddef \
+  /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
   /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
@@ -511,16 +536,20 @@ CMakeFiles/untitled.dir/src/Menu.cpp.o: /home/martagfmartins/Desktop/faculdade/d
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/fstream \
   /usr/include/c++/13/initializer_list \
   /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
+  /usr/include/c++/13/limits \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/ratio \
+  /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
@@ -540,6 +569,7 @@ CMakeFiles/untitled.dir/src/Menu.cpp.o: /home/martagfmartins/Desktop/faculdade/d
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/time.h \
@@ -564,6 +594,8 @@ CMakeFiles/untitled.dir/src/Menu.cpp.o: /home/martagfmartins/Desktop/faculdade/d
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
@@ -606,8 +638,10 @@ CMakeFiles/untitled.dir/src/Menu.cpp.o: /home/martagfmartins/Desktop/faculdade/d
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
@@ -623,7 +657,8 @@ CMakeFiles/untitled.dir/src/Menu.cpp.o: /home/martagfmartins/Desktop/faculdade/d
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 CMakeFiles/untitled.dir/src/Parser.cpp.o: /home/martagfmartins/Desktop/faculdade/da/project2_DA/src/Parser.cpp \
   /home/martagfmartins/Desktop/faculdade/da/project2_DA/src/Parser.h \
@@ -826,15 +861,13 @@ CMakeFiles/untitled.dir/src/Parser.cpp.o: /home/martagfmartins/Desktop/faculdade
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
 
-/usr/include/c++/13/sstream:
-
-/usr/include/c++/13/fstream:
-
-/usr/include/c++/13/bits/fstream.tcc:
-
 /home/martagfmartins/Desktop/faculdade/da/project2_DA/src/Parser.cpp:
 
 /home/martagfmartins/Desktop/faculdade/da/project2_DA/src/Menu.cpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
@@ -843,6 +876,8 @@ CMakeFiles/untitled.dir/src/Parser.cpp.o: /home/martagfmartins/Desktop/faculdade
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/stdint.h:
 
 /usr/include/c++/13/tr1/riemann_zeta.tcc:
 
@@ -858,9 +893,15 @@ CMakeFiles/untitled.dir/src/Parser.cpp.o: /home/martagfmartins/Desktop/faculdade
 
 /usr/include/c++/13/tr1/bessel_function.tcc:
 
+/usr/include/c++/13/sstream:
+
 /usr/include/c++/13/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/13/limits:
+
+/usr/include/c++/13/fstream:
+
+/usr/include/c++/13/ctime:
 
 /usr/include/c++/13/cmath:
 
@@ -869,6 +910,10 @@ CMakeFiles/untitled.dir/src/Parser.cpp.o: /home/martagfmartins/Desktop/faculdade
 /usr/include/c++/13/bits/stl_heap.h:
 
 /usr/include/c++/13/bits/stl_algo.h:
+
+/usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/c++/13/bits/fstream.tcc:
 
 /usr/include/c++/13/bits/algorithmfwd.h:
 
@@ -1078,6 +1123,8 @@ CMakeFiles/untitled.dir/src/Parser.cpp.o: /home/martagfmartins/Desktop/faculdade
 
 /usr/include/c++/13/bits/stl_function.h:
 
+/usr/include/c++/13/ratio:
+
 /usr/include/asm-generic/errno.h:
 
 /usr/include/c++/13/ext/numeric_traits.h:
@@ -1168,6 +1215,8 @@ CMakeFiles/untitled.dir/src/Parser.cpp.o: /home/martagfmartins/Desktop/faculdade
 
 /usr/include/c++/13/string:
 
+/usr/include/c++/13/chrono:
+
 /usr/include/c++/13/cerrno:
 
 /usr/include/c++/13/bits/predefined_ops.h:
@@ -1175,6 +1224,8 @@ CMakeFiles/untitled.dir/src/Parser.cpp.o: /home/martagfmartins/Desktop/faculdade
 /usr/include/c++/13/ostream:
 
 /usr/include/c++/13/pstl/pstl_config.h:
+
+/usr/include/c++/13/cstdint:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
@@ -1191,6 +1242,8 @@ CMakeFiles/untitled.dir/src/Parser.cpp.o: /home/martagfmartins/Desktop/faculdade
 /usr/include/c++/13/type_traits:
 
 /usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
 /usr/include/c++/13/vector:
 
@@ -1283,6 +1336,8 @@ CMakeFiles/untitled.dir/src/Parser.cpp.o: /home/martagfmartins/Desktop/faculdade
 /usr/include/c++/13/typeinfo:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/c++/13/bits/chrono.h:
 
 /usr/include/c++/13/initializer_list:
 

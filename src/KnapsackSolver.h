@@ -7,8 +7,10 @@
 
 #include "Parser.h"
 #include <vector>
+#include <chrono>
 
 struct Solution {
+    double time;
     int totalProfit;
     int totalWeight;
     std::vector<Pallet> selectedPallets;
