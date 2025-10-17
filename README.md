@@ -1,6 +1,6 @@
 # Knapsack Problem Solver
 
-Course project for Algorithms and Data Structures (L.EIC - FEUP, 2023/2024)
+Course project for Algorithm Design (L.EIC - FEUP, 2024/2025)
 
 ## Problem Description
 
